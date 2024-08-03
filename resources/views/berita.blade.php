@@ -1,0 +1,3 @@
+<x-layout>
+    <x-artikels>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eveniet distinctio amet reiciendis delectus quo eos saepe iste facilis autem architecto, quod dolorem tenetur pariatur atque odio quae. Minus, harum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia maiores, alias, deleniti cum velit mollitia at debitis esse amet, explicabo magni. Harum veritatis repudiandae a repellendus ut sunt iure. Impedit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque similique exercitationem totam possimus dicta officiis commodi veritatis vel asperiores voluptates architecto omnis eligendi consequuntur, eius suscipit laboriosam nesciunt dolorem aut.</x-artikels>
+</x-layout>
