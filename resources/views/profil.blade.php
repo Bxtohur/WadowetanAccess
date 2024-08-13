@@ -3,9 +3,9 @@
 
     <section class="mb-16">
       <div class="carousel relative">
-        <div><img src="{{ asset('images/carousel1.jpg') }}" alt="Image 1" class="w-full max-h-[500px] object-cover"></div>
-        <div><img src="{{ asset('images/carousel2.jpg') }}" alt="Image 2" class="w-full max-h-[500px] object-cover"></div>
-        <div><img src="{{ asset('images/carousel3.jpg') }}" alt="Image 3" class="w-full max-h-[500px] object-cover"></div>
+        <div><img src="{{ asset('images/carousel1.jpg') }}" alt="Image 1" class="w-full max-h-[500px] object-cover rounded-lg"></div>
+        <div><img src="{{ asset('images/carousel2.jpg') }}" alt="Image 2" class="w-full max-h-[500px] object-cover rounded-lg"></div>
+        <div><img src="{{ asset('images/carousel3.jpg') }}" alt="Image 3" class="w-full max-h-[500px] object-cover rounded-lg"></div>
       </div>
     </section>
 

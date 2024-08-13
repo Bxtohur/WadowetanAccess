@@ -1,3 +1,16 @@
 <x-layout>
-    <x-artikels>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eveniet distinctio amet reiciendis delectus quo eos saepe iste facilis autem architecto, quod dolorem tenetur pariatur atque odio quae. Minus, harum?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia maiores, alias, deleniti cum velit mollitia at debitis esse amet, explicabo magni. Harum veritatis repudiandae a repellendus ut sunt iure. Impedit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque similique exercitationem totam possimus dicta officiis commodi veritatis vel asperiores voluptates architecto omnis eligendi consequuntur, eius suscipit laboriosam nesciunt dolorem aut.</x-artikels>
+  @foreach ($beritas as $berita)
+    @php
+      $content = $berita->content;
+      $firstParagraph = '';
+      if (preg_match('/<p class="text-lg">(.*?)<\/p>/', $content, $matches)) {
+          $firstParagraph = $matches[0];
+      }
+    @endphp
+    <x-artikels>
+      <x-slot:title>{{ $title = "$berita->title"}}</x-slot:title>
+      <x-slot:id>{{ $id = "$berita->id"}}</x-slot:id>
+      {!! $firstParagraph !!}
+    </x-artikels>
+  @endforeach
 </x-layout>

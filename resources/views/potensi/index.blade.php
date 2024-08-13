@@ -2,7 +2,6 @@
 
 @section('content')
 <h1 class="text-2xl font-bold pb-4">Potensi List</h1>
-
 <a href="{{ route('admin.potensi.create') }}" class="bg-[#048BD8] rounded-lg px-4 py-2 text-white font-semibold mb-4 inline-block">
     <i class="fas fa-plus"></i> Create Potensi
 </a>
@@ -12,7 +11,7 @@
         <thead>
             <tr>
                 <th class="px-4 py-2 sm:px-6 sm:py-3 border-b border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">Title</th>
-                <th class="px-4 py-2 sm:px-6 sm:py-3 border-b border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">Content</th>
+                <th class="px-4 py-2 sm:px-6 sm:py-3 border-b border-gray-300 text-left text-sm leading-4 line-clamp-5 text-ellipsis text-blue-500 tracking-wider">Content</th>
                 <th class="px-4 py-2 sm:px-6 sm:py-3 border-b border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">Image</th>
                 <th class="px-4 py-2 sm:px-6 sm:py-3 border-b border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">Actions</th>
             </tr>

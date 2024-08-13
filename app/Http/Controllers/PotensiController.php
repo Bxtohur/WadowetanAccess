@@ -14,12 +14,21 @@ class PotensiController extends Controller
         $potensis = Potensi::all();
         return view('potensi.index', compact('potensis'));
     }
+   
+    public function show($id)
+    {
+        $potensis = Potensi::findOrFail($id);
+        return view('artikel', compact('potensis'));
+    }
+
+
 
     public function indexViewer()
     {
         $potensis = Potensi::all();
         $title = $potensis->isNotEmpty() ? $potensis->first()->title : 'Default Title';
-        return view('potensi', ['potensis' => $potensis, 'title' => $title]);
+        $id = $potensis->isNotEmpty() ? $potensis->first()->id : 'Default id';
+        return view('potensi', ['potensis' => $potensis, 'title' => $title, 'id' => $id]);
     }
 
     // Show form to create new potensi
